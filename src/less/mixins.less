@@ -1,0 +1,12 @@
+.button(@outline: #color[primary]; @background: transparent) {
+  background: @background;
+  border: 1rem solid @outline;
+  border-radius: 0;
+  transition: all @TRANSISTION-SPEED;
+
+  &:hover {
+    background: @outline;
+    border: 1rem solid @background;
+    border-radius: 1rem;
+  }
+}
