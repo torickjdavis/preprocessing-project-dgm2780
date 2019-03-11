@@ -16,15 +16,6 @@
   }
 }
 
-.text-gradient(@from; @to: @from; @angle: 90deg; @fromStop: ~''; @toStop: ~'') { // (https://cssgradient.io/blog/css-gradient-text/)
-  color: @from; // fallback (https://codepen.io/mrozilla/pen/rGYyjv)
-  background: linear-gradient(@angle, @from @fromStop, @to @toStop);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
 .background-image(@imageURL) {
   position: relative;
 
