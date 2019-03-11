@@ -15,4 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
+
+  let navButton = document.querySelectorAll(".nav-button")[0];
+  navButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    navButton.classList.toggle("fa-bars");
+    navButton.classList.toggle("fa-times");
+    let nav = document.querySelectorAll("nav")[0];
+
+    nav.classList.toggle("active");
+  });
 });
