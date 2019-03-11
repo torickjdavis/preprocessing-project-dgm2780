@@ -9,16 +9,16 @@ I mimicked the layout from [La Finesse | Nosotros](https://lafinesse.es/nosotros
 ## Project Requirements (*Multi-Page Website Styled with LESS*)
 
 ### Website
-- [ ] **Theme**: Does your design match the theme (**biking**, spa, bookstore) you picked?
-- [ ] Create a second page of your choice.
-- [ ] Create navigation between the home and secondary page(s).
-- [ ] Create buttons on each page with a call to action for the user. (Ex: Sign Up, Buy Now, etc)
+- [x] **Theme**: Does your design match the theme (**biking**, spa, bookstore) you picked?
+- [x] Create a second page of your choice.
+- [x] Create navigation between the home and secondary page(s).
+- [x] Create buttons on each page with a call to action for the user. (Ex: Sign Up, Buy Now, etc)
 
 ### Preprocessing
-- [ ] **Variables**: Showcase your knowledge of variables by creating a font stack variable and three different colors variables.
-- [ ] **Nesting**: Did you nest your LESS to resemble/match your HTML structure?
-- [ ] **Imports**: Use at least 3 imports in your project.
-- [ ] **Mixins**: Create 3 unique mixins.
-  - [ ] Two mixins of your choice.
-  - [ ] Create a mixin that creates a custom button using parameters. User this on your buttons.
+- [x] **Variables**: Showcase your knowledge of variables by creating a font stack variable and three different colors variables.
+- [x] **Nesting**: Did you nest your LESS to resemble/match your HTML structure?
+- [x] **Imports**: Use at least 3 imports in your project.
+- [x] **Mixins**: Create 3 unique mixins.
+  - [x] Two mixins of your choice.
+  - [x] Create a mixin that creates a custom button using parameters. User this on your buttons.
 - [ ] **Responsive**: Create a mobile version of the pages using escaped variables. Nothing complex is expected; you can simply stack your content on top of itself.
