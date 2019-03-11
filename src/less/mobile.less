@@ -1,0 +1,125 @@
+@media @max1024 {
+  .logo {
+    background: #color[white];
+  }
+
+  #about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+
+    p {
+      padding: 1rem 3rem;
+    }
+
+    .background-image {
+      align-items: initial;
+
+      &::before {
+        background: transparent;
+      }
+    }
+
+    .logo-name {
+      display: none;
+    }
+  }
+
+  #team {
+    .member:nth-of-type(2) {
+      &::before {
+        background-position: bottom;
+      }
+    }
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+}
+
+@media @max768 {
+  body {
+    padding: 2rem 0.5rem;
+  }
+
+  main {
+    padding: 7rem 0 0 0;
+  }
+
+  .nav-button {
+    display: block;
+    position: fixed;
+    z-index: 4;
+    top: 2rem;
+    right: 2rem;
+    .button(#color[accent-dark]);
+    padding: 1rem;
+    font-size: 2.5rem;
+    width: 5rem;
+    text-align: center;
+  }
+  nav {
+    background: #color[white];
+    transform: translateY(-999rem);
+    transition: @TRANSISTION-SPEED;
+    z-index: 3;
+
+    &.active {
+      transform: translateY(0);
+    }
+  }
+
+  #about {
+    .background-image { // has .meet-team
+      display: none;
+    }
+  }
+
+  #team {
+    margin: 2rem 0 0 0;
+    padding: 1rem;
+
+    .member {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      &-info {
+        grid-column: ~"1/-1";
+        grid-row: ~"2/3";
+      }
+
+      &-image, &-image:nth-of-type(2) {
+        height: 100%;
+        grid-column: ~"1/-1";
+        grid-row: ~"1/-1";
+
+        &::before {
+          background-position: center;
+        }
+      }
+    }
+  }
+
+  #contact {
+    padding: 3rem 2rem;
+  }
+
+  .contact {
+    &-form {
+      font-size: 1.6rem;
+
+      input, textarea {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .categories {
+    padding: 2rem 0;
+  }
+
+  .container {
+    margin: 5rem 0 0 0;
+  }
+}
