@@ -1,6 +1,7 @@
 # Preprocessing Website: *Road Warriors*
 ## [PREVIEW PAGE](https://htmlpreview.github.io/?https://github.com/torickjdavis/preprocessing-project-dgm2780/blob/master/src/index.html)
 *(via [niu tech's htmlpreview](https://htmlpreview.github.io))*
+*You may have to refresh the page, or you can download the code and preview it that way too.*
 
 Preprocessing allows for faster and more organized development.  Being able to take a design and convert it into HTML and CSS is a common skill required for full stack developers in any industry.
 
@@ -23,4 +24,4 @@ I mimicked the layout from [La Finesse | Nosotros](https://lafinesse.es/nosotros
 - [x] **Mixins**: Create 3 unique mixins.
   - [x] Two mixins of your choice.
   - [x] Create a mixin that creates a custom button using parameters. User this on your buttons.
-- [ ] **Responsive**: Create a mobile version of the pages using escaped variables. Nothing complex is expected; you can simply stack your content on top of itself.
+- [x] **Responsive**: Create a mobile version of the pages using escaped variables. Nothing complex is expected; you can simply stack your content on top of itself.
