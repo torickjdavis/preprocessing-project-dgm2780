@@ -1,0 +1,239 @@
+html {
+  font-size: 62.5%; // setting REM units (1rem == 10px)
+  font-family: #font[primary];
+  font-weight: 400;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #color[primary];
+  color: #color[white];
+  padding: 2rem 4rem;
+}
+
+a {
+  color: rgba(#color[secondary], 0.9);
+  text-decoration: none;
+  transition: @TRANSISTION-SPEED;
+  &:hover {
+    color: rgba(#color[accent-light], 0.9);
+  }
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 0 2rem 2.5rem;
+  background: #color[primary];
+  z-index: 1;
+
+  a {
+    color: #color[accent-dark];
+  }
+
+  &-name {
+    font-family: #font[accent];
+    font-size: 5rem;
+    span {
+      font-size: 0;
+      transition: font-size 400ms;
+    }
+
+    &:hover {
+      span {
+        font-size: inherit;
+      }
+    }
+  }
+}
+
+nav {
+  background: #color[primary];
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  .center-content(column);;
+  justify-content: space-evenly;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  a {
+    transform: rotate(90deg);
+  }
+}
+
+.heading {
+  font-size: 3rem;
+  padding: 1rem;
+  font-family: #font[accent];
+  font-weight: 700;
+}
+.subheading {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: #color[tertiary];
+  font-weight: 300;
+}
+
+main {
+  padding: 7rem 4rem 2rem 7rem;
+}
+
+#about {
+  // .background-image-filter(#image[background]);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  height: 90vh;
+
+  p {
+    text-align: left;
+    line-height: 2.5rem;
+    padding: 1rem 3rem 3rem 3rem;
+  }
+
+  .meet-team {
+    .button(#color[white]);
+    margin-top: 3rem;
+  }
+
+  .background-image {
+    .background-image(#image[background]);
+    .center-content(column);
+    .logo-name {
+      font-size: 10rem;
+    }
+  }
+}
+
+.member {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  margin: 5rem 0;
+
+  &-info {
+    grid-column: ~"1/3";
+    grid-row: ~"3/6";
+    .center-content(column);
+    text-align: center;
+    background: #color[secondary];
+    height: 35rem;
+    padding: 1rem;
+  }
+
+  &-image {
+    grid-column: ~"2/6";
+    grid-row: ~"1/5";
+    height: 50rem;
+  }
+
+  &-name {
+    font-size: 5rem;
+  }
+
+  &-bio {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  &-link {
+    margin-top: 3rem;
+    .button(#color[accent-dark]);
+  }
+
+  // modify for iteration via loop?
+  &:nth-of-type(1) {
+    .member-image {
+      .member-background(#image[afton-swan]);
+    }
+  }
+
+  &:nth-of-type(2) {
+    .member-info {
+      grid-column: ~"4/6";
+    }
+    .member-image {
+      .member-background(#image[james-john]);
+      grid-column: ~"1/5";
+    }
+  }
+
+  &:nth-of-type(3) {
+    .member-image {
+      .member-background(#image[alex-smith]; bottom);
+    }
+  }
+}
+
+.member-background(@imageURL; @position: 0 0;) {
+  .background-image(@imageURL);
+  &::before {
+    background-attachment: initial;
+    background-position: @position;
+  }
+}
+
+#contact {
+  .center-content();
+  background: #color[black];
+  padding: 3rem 0;
+}
+
+.contact {
+  &-info, &-hours {
+    .center-content(column);
+    padding: 1rem;
+  }
+
+  &-general, &-form {
+    .center-content(column);
+    padding: 5rem;
+  }
+
+  &-form {
+    background: #color[primary];
+    box-shadow: inset 0 0 4rem 0.5rem rgba(#color[black],0.5);
+
+    input, textarea {
+      .button(#color[white]);
+
+      font-family: inherit;
+      font-size: 2rem;
+      margin: 1rem;
+      width: 100%;
+    }
+
+    button {
+      .button(#color[white]);
+      .center-content();
+      margin-top: 1rem;
+
+      i {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+#social {
+  .center-content();
+
+  a {
+    margin: 2rem;
+    font-size: 3rem;
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(#color[secondary], 0.8);
+
+  p {
+    padding: 0.5rem;
+  }
+}
