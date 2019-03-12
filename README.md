@@ -1,7 +1,4 @@
 # Preprocessing Website: *Road Warriors*
-## [PREVIEW PAGE](https://htmlpreview.github.io/?https://github.com/torickjdavis/preprocessing-project-dgm2780/blob/master/src/index.html)
-*(via [niu tech's htmlpreview](https://htmlpreview.github.io))*
-*You may have to refresh the page, or you can download the code and preview it that way too.*
 
 Preprocessing allows for faster and more organized development.  Being able to take a design and convert it into HTML and CSS is a common skill required for full stack developers in any industry.
 
