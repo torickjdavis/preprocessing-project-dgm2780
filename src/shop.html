@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Road Warriors | Shop</title>
+    <title>Road Warriors</title>
     <meta charset="utf-8">
     <meta name="author" content="Torick J Davis">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,110 +10,102 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Google Fonts: https://fonts.google.com -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|UnifrakturCook:700" rel="stylesheet">
+    <!-- GSAP: https://greensock.com -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
     <!-- Custom Resources -->
     <link rel="stylesheet" href="css/index.min.css" type="text/css">
     <script src="js/script.js"></script>
+
   </head>
 
   <body>
-		<header>
-		  <a href="#"><i class="fas fa-bars nav-button"></i></a>
-			<div class="logo">
-				<a href="index.html">
-					<h1 class="logo-name">R<span>oad&nbsp;</span>W<span>arriors</span></h1>
-				</a>
-			</div>
-			<nav>
-				<a href="shop.html#motorcycles">Shop</a>
-				<a href="index.html#contact">Contact</a>
-				<a href="index.html#social">Social</a>
-			</nav>
-		</header>
-		<main>
-		  <div class="categories">
-		    <a href="#motorcycles">Motorcycles</a>
-		    <a href="#apparel">Apparel</a>
-		  </div>
-		  <div class="container">
-  		  <section class="category" id="motorcycles">
-  		    <h2 class="category-title">Motorcycles</h2>
-  		    <ul>
-  		      <li>
+    <header>
+      <a href="#"><i class="fas fa-bars nav-button"></i></a>
+      <div class="logo">
+        <a href="index.html">
+          <h1 class="logo-name">R<span>oad&nbsp;</span>W<span>arriors</span></h1>
+        </a>
+      </div>
+      <nav>
+        <a href="shop.html#motorcycles">Shop</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#social">Social</a>
+      </nav>
+    </header>
+    <main>
+      <div class="categories">
+        <a href="#motorcycles">Motorcycles</a>
+        <a href="#apparel">Apparel</a>
+      </div>
+      <div class="container">
+        <section class="category" id="motorcycles">
+          <h2 class="category-title">Motorcycles</h2>
+          <ul>
+            <li>
               <div class="item">
                 <img src="https://images.unsplash.com/photo-1549375812-d42e30e915d0?auto=format&fit=crop&w=720&h=720&q=80" alt="BMW Close Up" class="item-image-alt hovered">
                 <img src="https://images.unsplash.com/photo-1549375812-2ab575f006f2?auto=format&fit=crop&w=720&h=720&q=80" alt="BMW" class="item-image">
                 <h2 class="item-name">BMW</h2>
                 <h3 class="item-price">$$$$</h3>
-                <p class="item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                magna aliquam erat volutpat.</p>
+                <p class="item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
               </div>
-  		      </li>
-  		      <li>
+            </li>
+            <li>
               <div class="item">
                 <img src="https://images.unsplash.com/photo-1508357941501-0924cf312bbd?auto=format&fit=crop&w=720&h=720&q=80" alt="Kawasaki Alternative" class="item-image-alt hovered">
                 <img src="https://images.unsplash.com/photo-1508357710528-af900c15fe96?auto=format&fit=crop&w=720&h=720&q=80" alt="Kawasaki" class="item-image">
                 <h2 class="item-name">Kawasaki</h2>
                 <h3 class="item-price">$$$$</h3>
-                <p class="item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                magna aliquam erat volutpat.</p>
+                <p class="item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
               </div>
-  		      </li>
-  		      <li>
+            </li>
+            <li>
               <div class="item">
                 <img src="https://images.unsplash.com/photo-1501611724492-c09bebdba1ac?&auto=format&fit=crop&w=720&h=720&q=80" alt="Old Faithful" class="item-image">
                 <h2 class="item-name">Old Faithful</h2>
                 <h3 class="item-price">$$$$</h3>
-                <p class="item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                magna aliquam erat volutpat.</p>
+                <p class="item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
               </div>
-  		      </li>
-  		    </ul>
-  		  </section>
-  		  <section class="category" id="apparel">
-  		    <h2 class="category-title">Apparel</h2>
-  		    <ul>
-  		      <li>
+            </li>
+          </ul>
+        </section>
+        <section class="category" id="apparel">
+          <h2 class="category-title">Apparel</h2>
+          <ul>
+            <li>
               <div class="item">
                 <h2 class="item-name">Helmets</h2>
                 <h3 class="item-price">$$</h3>
                 <img src="https://images.unsplash.com/photo-1549825987-1bc6bd59e96a?auto=format&fit=crop&w=720&h=720&q=80" alt="Helmet Alternative" class="item-image-alt hovered">
                 <img src="https://images.unsplash.com/photo-1549825987-1c5a07b6e7c2?auto=format&fit=crop&w=720&h=720&q=80" alt="Helmet" class="item-image">
-                <p class="item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                magna aliquam erat volutpat.</p>
+                <p class="item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
               </div>
-  		      </li>
-  		      <li>
+            </li>
+            <li>
               <div class="item">
                 <h2 class="item-name">Jackets</h2>
                 <h3 class="item-price">$$</h3>
                 <img src="https://images.pexels.com/photos/736389/pexels-photo-736389.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=720&w=720" alt="Jacket" class="item-image">
-                <p class="item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                magna aliquam erat volutpat.</p>
+                <p class="item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
               </div>
-  		      </li>
-  		      <li>
+            </li>
+            <li>
               <div class="item">
                 <h2 class="item-name">Gloves</h2>
                 <h3 class="item-price">$</h3>
                 <img src="https://images.pexels.com/photos/1407130/pexels-photo-1407130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=720&w=720" alt="Gloves" class="item-image">
-                <p class="item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                magna aliquam erat volutpat.</p>
+                <p class="item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
               </div>
-  		      </li>
-  		    </ul>
-  		  </section>
-		  </div>
-		</main>
-		<footer>
-			<p>&copy; 2019 <a href="https://aetherix.net">Torick J Davis</a></p>
-			<p><a href="https://unsplash.com/license">Unsplash License</a> | <a href="https://www.pexels.com/photo-license/">Pexels License</a></p>
-			<p><a href="https://fontawesome.com">FontAwesome</a> | <a href="https://greensock.com/standard-license">GSAP License</a></p>
-		</footer>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2019 <a href="https://aetherix.net">Torick J Davis</a></p>
+      <p><a href="https://unsplash.com/license">Unsplash License</a> | <a href="https://www.pexels.com/photo-license/">Pexels License</a></p>
+      <p><a href="https://fontawesome.com">FontAwesome</a> | <a href="https://greensock.com/standard-license">GSAP License</a></p>
+    </footer>
   </body>
+
 </html>
