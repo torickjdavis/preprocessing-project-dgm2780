@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   animatePage();
+  lazyAnimate('.member', 'from', 1, { opacity: 0 });
 });
 
 function animatePage() {
@@ -52,4 +53,23 @@ function animatePage() {
       TweenMax.to(item, 1, { borderRadius: "2rem" });
     });
   });
+}
+
+function lazyAnimate(targetSelector, tweenType, speed, animation) {
+  // LAZY ANIMATE TARGETS (only animate if intersecting viewport)
+  // Inspired by image lazy loading from: https://fireship.io/snippets/intersection-observer-lazy-load-images/
+  const targets = document.querySelectorAll(targetSelector);
+  const lazyAnimation = target => {
+    const io = new window.IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          TweenMax[tweenType](entry.target, speed, animation);
+          observer.disconnect();
+        }
+      });
+    });
+    io.observe(target);
+  };
+
+  targets.forEach(lazyAnimation);
 }
