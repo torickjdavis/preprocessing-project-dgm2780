@@ -1,5 +1,5 @@
 "use strict";
-/* global TweenMax, TimelineMax, Sine */
+/* global TweenMax, TimelineMax */
 document.addEventListener("DOMContentLoaded", () => {
   let shopImages = document.querySelectorAll(".item-image");
   for (let image of shopImages) {
